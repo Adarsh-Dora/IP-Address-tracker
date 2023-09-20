@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  font-size: 18px;
+}
+.heading {
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+  margin-top: 2.4rem;
+
+  color: aliceblue;
+  top: 24px;
+  left: 50%;
+}
+
+.ipadress {
+  border-radius: 8px;
+  width: 400px;
+  padding: 0.5rem;
+}
+.button {
+  border-radius: 6px;
+  background-color: black;
+  padding: 0.5rem;
+}
+.top {
+  background-image: url(images/pattern-bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+}
+.section {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.IP-data {
+  display: flex;
+  justify-content: center;
+  gap: 44px;
+  width: 600px;
+  position: absolute;
+  background-color: #fff;
+  padding: 18px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: hsl(0, 0%, 17%);
+  font-weight: 500;
+  box-shadow: 4px 4px 14px 0 #555;
+  z-index: 2;
+}
+
+h2 {
+  font-size: 13px;
+  color: hsl(0, 0%, 59%);
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#map {
+  z-index: 1;
+  height: calc(100vh - 300px);
+}
