@@ -1,4 +1,4 @@
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   .ipadress {
     width: 300px;
     height: 24px;
@@ -23,15 +23,7 @@
     text-align: center;
     gap: 12px;
     width: 400px;
-    position: absolute;
-    background-color: #fff;
-    padding: 18px;
-    border-radius: 10px;
-    font-size: 16px;
-    color: hsl(0, 2%, 11%);
-    font-weight: 500;
-    box-shadow: 4px 4px 14px 0 #555;
-    z-index: 2;
+    height: auto;
   }
   .top {
     background-image: url(images/pattern-bg-mobile.png);

@@ -12,7 +12,7 @@ body {
 .heading {
   font-weight: 700;
   font-size: 3.2rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 3.2rem;
   margin-top: 2.4rem;
 
   color: aliceblue;
@@ -24,11 +24,17 @@ body {
   border-radius: 8px;
   width: 400px;
   padding: 0.5rem;
+  height: 1.6rem;
+}
+.form-value {
+  display: flex;
 }
 .button {
   border-radius: 6px;
   background-color: black;
   padding: 0.5rem;
+  height: 2.8rem;
+  width: 3.2rem;
 }
 .top {
   background-image: url(images/pattern-bg-desktop.png);
@@ -52,15 +58,16 @@ body {
   display: flex;
   justify-content: center;
   gap: 44px;
-  width: 600px;
+  width: 700px;
+  height: 78px;
   position: absolute;
   background-color: #fff;
   padding: 18px;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 16px;
   color: hsl(0, 0%, 17%);
   font-weight: 500;
-  box-shadow: 4px 4px 14px 0 #555;
+  box-shadow: 4px 6px 14px 0 #555;
   z-index: 2;
 }
 

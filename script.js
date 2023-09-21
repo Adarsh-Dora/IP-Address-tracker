@@ -4,13 +4,14 @@ const timezone = document.getElementById("timezone");
 const isp = document.getElementById("isp");
 const btn = document.querySelector(".button");
 const ipadress = document.querySelector(".ipadress");
+const form = document.querySelector(".form-value");
 
 var myIcon = L.icon({
   iconUrl: "../images/icon-location.svg",
   iconSize: [38, 44],
   iconAnchor: [22, 94],
   popupAnchor: [-3, -76],
-  shadowUrl: "my-icon-shadow.png",
+  // shadowUrl: "my-icon-shadow.png",
   shadowSize: [68, 95],
   shadowAnchor: [22, 94],
 });
@@ -21,7 +22,7 @@ const getipadress = async function (ipvalue) {
   );
   const data = await response.json();
   showData(data);
-  map.setView([data.location.lat, data.location.lng], 13);
+  map.flyTo([data.location.lat, data.location.lng], 14);
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
     attribution:
@@ -42,7 +43,7 @@ const showData = function (data) {
 
 let map = L.map("map").setView([22.12, 84.54], 13);
 
-btn.addEventListener("click", async function (e) {
+form.addEventListener("submit", async function (e) {
   e.preventDefault();
   getipadress(ipadress.value);
 });
