@@ -28,6 +28,7 @@ body {
 }
 .form-value {
   display: flex;
+  gap: 0.05rem;
 }
 .button {
   border-radius: 6px;
